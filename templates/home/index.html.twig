@@ -1,0 +1,105 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Bienvenu sur Adopte un dev{% endblock %}
+
+{% block body %}
+   <!-- Menu de navigation -->
+   <header class="bg-white shadow-lg sticky top-0 z-50">
+      <nav class="container mx-auto px-6 py-4 flex justify-between items-center">
+         <a href="#" class="text-2xl font-extrabold text-blue-600 flex items-center">
+               <i class="fas fa-code"></i>
+               <span class="ml-2">AdopteUnDev</span>
+         </a>
+         <ul class="flex space-x-6">
+               <li><a href="#about" class="hover:text-blue-600">À propos</a></li>
+               <li><a href="#developers" class="hover:text-blue-600">Développeurs</a></li>
+               <li><a href="#jobs" class="hover:text-blue-600">Offres</a></li>
+               <li><a href="#contact" class="hover:text-blue-600">Contact</a></li>
+         </ul>
+         <div>
+               <a href="/login" class="text-sm bg-blue-600 text-white px-4 py-2 rounded-full hover:bg-blue-700">Se connecter</a>
+               <a href="/register" class="text-sm bg-gray-200 px-4 py-2 rounded-full ml-2 hover:bg-gray-300">S'inscrire</a>
+         </div>
+      </nav>
+   </header>
+
+   <!-- Section Héros -->
+   <section class="bg-gradient-to-r from-blue-600 to-blue-800 text-white py-20">
+      <div class="container mx-auto text-center">
+         <h1 class="text-5xl font-bold">Trouvez votre développeur ou votre prochaine opportunité</h1>
+         <p class="text-lg mt-4">Optimisez vos recrutements ou trouvez le poste parfait grâce à notre plateforme innovante.</p>
+         <div class="mt-8">
+               <a href="#developers" class="bg-white text-blue-600 px-6 py-3 rounded-full font-bold shadow hover:bg-gray-200">Je suis une entreprise</a>
+               <a href="#jobs" class="bg-white text-blue-600 px-6 py-3 rounded-full font-bold shadow hover:bg-gray-200 ml-4">Je suis développeur</a>
+         </div>
+      </div>
+   </section>
+
+   <!-- Section À propos -->
+   <section id="about" class="py-16 bg-gray-100">
+      <div class="container mx-auto">
+         <h2 class="text-3xl font-bold text-center text-blue-600 mb-10">Notre mission et nos objectifs</h2>
+         <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+               <!-- Mission -->
+               <div>
+                  <img src="path/to/mission-image.jpg" alt="Mission" class="rounded-lg shadow">
+               </div>
+               <div>
+                  <h3 class="text-2xl font-bold mb-4">Simplifier la mise en relation</h3>
+                  <p class="text-lg leading-relaxed text-gray-600">Nous visons à connecter les meilleurs talents du numérique avec des entreprises innovantes. Notre plateforme utilise des filtres avancés et un système de matching intelligent pour simplifier vos recherches.</p>
+               </div>
+         </div>
+      </div>
+   </section>
+
+   <!-- Section Développeurs -->
+   <section id="developers" class="py-16">
+      <div class="container mx-auto">
+         <h2 class="text-3xl font-bold text-center text-blue-600 mb-10">Développeurs les plus consultés</h2>
+         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+               <!-- 8 cartes -->
+               <div class="bg-white shadow rounded-lg p-4 text-center">
+                  <img src="path/to/avatar1.jpg" alt="Avatar" class="w-16 h-16 rounded-full mx-auto mb-4">
+                  <h3 class="text-lg font-bold">John Doe</h3>
+                  <p class="text-sm text-gray-600">React, Node.js - Paris</p>
+                  <p class="text-sm mt-2">Expérience : 5/5</p>
+                  <a href="/developer/1" class="bg-blue-600 text-white px-4 py-2 rounded-full text-sm mt-4 block">Voir le profil</a>
+               </div>
+               <!-- Répétez cette carte pour 7 autres développeurs -->
+         </div>
+      </div>
+   </section>
+
+   <!-- Section Offres -->
+   <section id="jobs" class="py-16 bg-gray-100">
+      <div class="container mx-auto">
+         <h2 class="text-3xl font-bold text-center text-blue-600 mb-10">Offres populaires</h2>
+         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+               <!-- 8 cartes -->
+               <div class="bg-white shadow rounded-lg p-4">
+                  <h3 class="text-lg font-bold">Développeur Fullstack</h3>
+                  <p class="text-sm text-gray-600">Entreprise ABC - Paris</p>
+                  <p class="text-sm mt-2">Technologies : React, Node.js</p>
+                  <p class="text-sm mt-2">Salaire : 45k - 60k €</p>
+                  <a href="/job/1" class="bg-blue-600 text-white px-4 py-2 rounded-full text-sm mt-4 block text-center">Voir l'offre</a>
+               </div>
+               <!-- Répétez cette carte pour 7 autres offres -->
+         </div>
+      </div>
+   </section>
+
+   <!-- Section Contact -->
+   <section id="contact" class="py-16">
+      <div class="container mx-auto text-center">
+         <h2 class="text-3xl font-bold text-blue-600">Contactez-nous</h2>
+         <p class="text-lg text-gray-600 mt-4">Pour toute question ou assistance, contactez notre équipe via <a href="mailto:support@adopteundev.com" class="text-blue-600 underline">support@adopteundev.com</a>.</p>
+      </div>
+   </section>
+
+   <!-- Footer -->
+   <footer class="bg-gray-800 text-white py-6">
+      <div class="container mx-auto text-center">
+         <p class="text-sm">© 2024 AdopteUnDev. Tous droits réservés.</p>
+      </div>
+   </footer>
+{% endblock %}
